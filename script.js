@@ -12,7 +12,8 @@ function compute()
     // Convert no. of years into actual year in the future
     var year = new Date().getFullYear()+parseInt(years);
     
-    displayInterest();
+    // Display calculated interest
+    document.getElementByID("result").innerText = interest;
 }
 
 // Read and update the value of rate_val
@@ -20,9 +21,4 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText = rateval;
-}
-
-function displayInterest()
-{
-    document.getElementByID("result").innerText = interest;
 }
