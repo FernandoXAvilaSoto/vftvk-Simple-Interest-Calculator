@@ -13,7 +13,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
     
     // Display message inside "result" <span> element
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
 }
 
 // Read and update the value of rate_val
