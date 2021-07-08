@@ -12,9 +12,6 @@ function compute()
     // Convert no. of years into actual year in the future
     var year = new Date().getFullYear()+parseInt(years);
     
-    // Display calculated interest inside "interest" <span> element
-    document.getElementByID("result").innerText = interest;
-    
     // Display message inside "result" <span> element
     document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
 }
@@ -23,5 +20,5 @@ function compute()
 function updateRate()
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText = rateval;
+    document.getElementById("rate_val").innerHTML = rateval;
 }
