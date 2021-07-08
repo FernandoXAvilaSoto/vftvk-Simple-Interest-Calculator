@@ -13,13 +13,9 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 }
 
-// Read the value of the range slider and display it in the <span> tag adjacent to the slider
+// Read and update the value of rate_val
 function updateRate()
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText = rateval;
 }
-
-<select onchange="updateRate()">
-
-</select>
