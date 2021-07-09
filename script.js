@@ -10,12 +10,12 @@ function compute()
         {
             validating = true;
             alert("Enter a positive value");
-            // Internal function to put focus back on "principal" input box
+            // Internal function to put focus back on "principal" input box; after 1ms, set focus and set validation = false
             setTimeout(function(){
                 document.getElementByID("principal").focus();
                 validating = false;}, 1)
         }
-        document.getElementByID("principal").focus();
+        return false;
     }
     
     var rate = document.getElementById("rate").value;
