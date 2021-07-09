@@ -2,10 +2,19 @@ function compute()
 {
     var principal = document.getElementById("principal").value;
     // Make sure value of principal is > 0
+    var validating = false;
     if (principal <= 0)
     {
-        alert("Enter a positive value");
-        document.getElementByID("principal").focus(); // Bring input focus back to "principal" input box
+        // Display an alert, put focus back on "principal" input box
+        if (validating == false)
+        {
+            validating = true;
+            alert("Enter a positive value");
+            // Internal function to put focus back on "principal" input box
+            setTimeout(function(){
+                document.getElementByID("principal").focus();
+                validating = false;}, 1)
+        }
     }
     
     var rate = document.getElementById("rate").value;
