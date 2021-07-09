@@ -15,7 +15,7 @@ function compute()
                 document.getElementByID("principal").focus();
                 validating = false;}, 1)
         }
-        return false;
+        document.getElementByID("principal").focus();
     }
     
     var rate = document.getElementById("rate").value;
