@@ -6,7 +6,7 @@ function compute()
     if (principal <= 0)
     {
         // Display an alert, put focus back on "principal" input box
-        if (validating == false)
+        if (validating === false)
         {
             validating = true;
             alert("Enter a positive value");
