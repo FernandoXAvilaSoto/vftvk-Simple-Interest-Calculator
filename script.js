@@ -3,6 +3,13 @@ function compute()
     p = document.getElementById("principal").value;
     
     var principal = document.getElementById("principal").value;
+    // Make sure value of principal is > 0
+    if (principal <= 0)
+    {
+        alert("Enter a positive value");
+        document.getElementByID("principal").focus(); // Bring input focus back to principal
+    }
+    
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
 
